@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(42, 82, 58);
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+header, nav, article, aside, footer {
+    border: 1px solid rgb(169, 196, 180);
+    padding: 10px;
+}
+nav ul{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 3px;
+    list-style-type: none;
+    padding-bottom: 10px;
+}
+nav li {
+    border: 1px solid rgba(0, 0, 0, 0.178);
+    text-align: center;
+}
+nav li a{
+    color: black;
+    text-decoration: none;
+}
+nav li:hover a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(77, 165, 216);
+}
+nav li:hover{
+    background-color: rgb(77, 165, 216);
+}
+aside {
+    margin: 5px;
+    border-radius: 1%;
+    background-color: rgb(96, 141, 114);
+}
+article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin: 5px;
+    border-radius: 1%;
+    background-color: rgb(96, 141, 114);
+}
+img{
+    width: 10%;
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    border-radius: 1%;
+    margin: 2px;
+}
+.doboz{
+    border: 1px solid rgba(0, 0, 0, 0.664);
+    border-radius: 1%;
+    margin: 2px;
+    background-color: rgb(127, 170, 144);
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "h h h h"
+    "n n n n"
+    "as ar ar ar"
+    "f f f f";
+    gap: 10px;
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+
+@media screen and (max-width:700px) {
+    main { 
+        display: grid;  
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "h h h"
+        "n n n"
+        "as ar ar"
+        "f f f";
+    } 
+}
+
+@media screen and (max-width:400px) {
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "as"
+        "ar"
+        "f";
+      }
+}
