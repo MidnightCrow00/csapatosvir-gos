@@ -2,57 +2,87 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-size: calc( 4px + 1vw )
 }
 body{
-    background-color: rgb(42, 82, 58);
-    width: 100%;
+
+    background-color: rgb(17, 26, 12);
+    width: 90%;
     max-width: 1000px;
     margin: auto;
 }
 header, nav, article, aside, footer {
-    border: 1px solid rgb(169, 196, 180);
+    border: 1px solid rgb(186, 219, 159);
     padding: 10px;
+}
+header{
+    background-image: url(viragok_orsi/fejh2.jpg);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+header>h1{
+    font-size: xx-large;
+}
+.idezet{
+    text-align: center;
+    color: black;
 }
 nav ul{
     display: grid;
-    grid-template-columns: 100px 100px 100px;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 3px;
     list-style-type: none;
-    padding-bottom: 10px;
 }
 nav li {
-    border: 1px solid rgba(0, 0, 0, 0.178);
+    border: 1px solid rgba(155, 241, 169, 0.178);
     text-align: center;
 }
 nav li a{
-    color: black;
+    color: rgb(67, 79, 42);
     text-decoration: none;
 }
 nav li:hover a{
     color: rgb(255, 255, 255);
-    background-color: rgb(77, 165, 216);
+    background-color: rgb(67, 79, 42);
 }
 nav li:hover{
-    background-color: rgb(77, 165, 216);
+    background-color: rgb(67, 79, 42);
+}
+aside ul>li{
+    list-style-type: none;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(39, 48, 25);
+}
+aside li a{
+    color: rgb(30, 34, 20);
+    text-decoration: none;
+}
+aside li:hover a{
+    color: rgb(172, 197, 116);
+    background-color: rgb(67, 79, 42);
+}
+aside li:hover{
+    background-color: rgb(67, 79, 42);
 }
 aside {
-    margin: 5px;
     border-radius: 1%;
-    background-color: rgb(96, 141, 114);
+    background-color: rgb(67, 79, 42);
+    display: grid;
+    height: 100%;
 }
 article{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
     gap: 10px;
-    margin: 5px;
     border-radius: 1%;
-    background-color: rgb(96, 141, 114);
+    background-color: rgb(143, 145, 66);
 }
 img{
-    width: 10%;
-    border: 1px solid rgba(0, 0, 0, 0.664);
+    width: 30%;
+    border: 1px solid rgba(186, 219, 159);
     border-radius: 1%;
     margin: 2px;
+    height: 70%;
 }
 .doboz{
     border: 1px solid rgba(0, 0, 0, 0.664);
@@ -60,14 +90,15 @@ img{
     margin: 2px;
     background-color: rgb(127, 170, 144);
 }
+
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr;
     grid-template-areas: 
-    "h h h h"
-    "n n n n"
-    "as ar ar ar"
-    "f f f f";
+    "h h h"
+    "n n n"
+    "as ar ar"
+    "f f f";
     gap: 10px;
 }
 header{
@@ -76,12 +107,13 @@ header{
 nav{
     grid-area: n;
 }
-article{
-    grid-area: ar;
-}
 aside{
     grid-area: as;
 }
+article{
+    grid-area: ar;
+}
+
 footer{
     grid-area: f;
 }
@@ -89,12 +121,12 @@ footer{
 @media screen and (max-width:700px) {
     main { 
         display: grid;  
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 2fr;
         grid-template-areas: 
-        "h h h"
-        "n n n"
-        "as ar ar"
-        "f f f";
+        "h h"
+        "n n"
+        "as ar"
+        "f f";
     } 
 }
 
