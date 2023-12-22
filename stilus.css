@@ -77,18 +77,42 @@ article{
     border-radius: 1%;
     background-color: rgb(143, 145, 66);
 }
-img{
+.kepek>img{
     width: 30%;
     border: 1px solid rgba(186, 219, 159);
     border-radius: 1%;
     margin: 2px;
     height: 70%;
 }
+#kepekegy>img{
+    width: 30%;
+    border: 1px solid rgba(186, 219, 159);
+    border-radius: 1%;
+    margin: 2px;
+    height: 70%;
+}
+.topkepek>img{
+    width: 30%;
+    border: 1px solid rgba(186, 219, 159);
+    border-radius: 1%;
+    margin: 2px;
+    max-height: 300px;
+}
+.viragnyelvkep>img{
+    width: 30%;
+    border: 1px solid rgba(186, 219, 159);
+    border-radius: 1%;
+    margin: 2px;
+    max-height: 250px;
+}
 .doboz{
     border: 1px solid rgba(0, 0, 0, 0.664);
     border-radius: 1%;
     margin: 2px;
     background-color: rgb(127, 170, 144);
+}
+.cim{
+    text-decoration: underline;
 }
 
 main {
