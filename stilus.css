@@ -133,6 +133,14 @@ main {
     text-decoration: none;
     color: rgb(208, 252, 157);
 }
+.kovetkezo{
+    text-align: right;
+}
+.kovetkezo a{
+    text-decoration: underline;
+    color: rgb(208, 252, 157);
+    font-size: smaller;
+}
 header{
     grid-area: h;
 }
