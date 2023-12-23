@@ -79,15 +79,37 @@ img{
 }
 
 div#kep1{
-    padding-top: 50px;
+    padding-top: 53px;
 }
 div#kep2{
-    padding-top: 110px;
+    padding-top: 113px;
 }
 
 .szoveg{
     text-align: justify;
 }
 div#kep3{
+    padding-top: 78px;
+}
+
+div#kep4{
+    padding-top: 90px;
+}
+
+div#kep5{
+    padding-top: 79px;
+}
+
+div#kep6{
+    padding-top: 65px;
+}
+
+div#kep7{
     padding-top: 80px;
+}
+
+footer{
+    text-align: center;
+    color: rgb(186, 219, 159);
+    padding: 5px;
 }
