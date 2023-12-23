@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: calc( 4px + 1vw )
+}
+body{
+
+    background-color: rgb(17, 26, 12);
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+header, nav, article, aside, footer {
+    border: 1px solid rgb(186, 219, 159);
+    padding: 10px;
+}
+header{
+    background-image: url(viragok_orsi/fejh2.jpg);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+header>h1{
+    font-size: xx-large;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3px;
+    list-style-type: none;
+}
+nav li {
+    border: 1px solid rgba(155, 241, 169, 0.178);
+    text-align: center;
+}
+nav li a{
+    color: rgb(67, 79, 42);
+    text-decoration: none;
+}
+nav li:hover a{
+    color: rgb(255, 255, 255);
+    background-color: rgb(67, 79, 42);
+}
+nav li:hover{
+    background-color: rgb(67, 79, 42);
+}
+
+h2{
+    text-align: center;
+    padding: 15px;
+    padding-bottom: 30px;
+    color: rgb(186, 219, 159);
+    font-size: 150%;
+}
+
+table{
+    text-align: center;
+    color: rgb(186, 219, 159);
+    border: 1px solid rgb(186, 219, 159);
+}
+
+footer{
+    text-align: center;
+    color: rgb(186, 219, 159);
+    padding: 5px;
+}
+
+th{
+    padding-bottom: 10px;
+}
+
+td{
+    border: 1px solid rgb(186, 219, 159);
+    padding: 5px;
+}
+
+header{
+    grid-area: h;
+}
+
+nav{
+    grid-area: n;
+}
+
+article{
+    grid-area: ar;
+}
+
+footer{
+    grid-area: f;
+}
+
+@media screen and (max-width:400px) {
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "h"
+      "n"
+      "ar"
+      "f";
+    }
+}
