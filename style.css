@@ -45,6 +45,15 @@ nav li:hover a{
 nav li:hover{
     background-color: rgb(67, 79, 42);
 }
+.kovetkezo{
+    text-align: right;
+}
+.kovetkezo a{
+    text-decoration: underline;
+    color: rgb(208, 252, 157);
+    font-size: smaller;
+    padding: 10px;
+}
 
 h2{
     text-align: center;
