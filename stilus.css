@@ -85,13 +85,6 @@ article{
     margin: 2px;
     height: 70%;
 }
-#kepekegy>img{
-    width: 30%;
-    border: 1px solid rgba(186, 219, 159);
-    border-radius: 1%;
-    margin: 2px;
-    height: 70%;
-}
 .topkepek>img{
     width: 30%;
     border: 1px solid rgba(186, 219, 159);
@@ -105,6 +98,13 @@ article{
     border-radius: 1%;
     margin: 2px;
     max-height: 250px;
+}
+.kep>img{
+    width: 40%;
+    border-radius: 1%;
+    margin: 2px;
+    display: block;
+    margin: 0 auto;
 }
 .doboz{
     border: 1px solid rgba(0, 0, 0, 0.664);
@@ -140,6 +140,15 @@ main {
     text-decoration: underline;
     color: rgb(208, 252, 157);
     font-size: smaller;
+}
+#mitologia>h1{
+    font-size: x-large;
+}
+#viragnyelv>h1{
+    font-size: x-large;
+}
+#topharom{
+    font-size: x-large;
 }
 header{
     grid-area: h;
