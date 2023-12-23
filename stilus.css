@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-size: calc( 4px + 1vw )
+    
 }
 body{
 
@@ -124,6 +125,13 @@ main {
     "as ar ar"
     "f f f";
     gap: 10px;
+}
+.felgomb {
+    text-align: center;
+}
+.felgomb a{
+    text-decoration: none;
+    color: rgb(208, 252, 157);
 }
 header{
     grid-area: h;
