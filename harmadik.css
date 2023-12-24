@@ -9,7 +9,6 @@ body{
     width: 90%;
     max-width: 1000px;
     margin: auto;
-    color: rgb(186, 219, 159);
 }
 header, nav, article, aside, footer {
     border: 1px solid rgb(186, 219, 159);
@@ -22,6 +21,19 @@ header{
 }
 header>h1{
     font-size: xx-large;
+}
+aside {
+    border-radius: 1%;
+    background-color: rgb(67, 79, 42);
+    display: grid;
+    height: 100%;
+}
+article{
+    display: grid;
+    height: 100%;
+    gap: 10px;
+    border-radius: 1%;
+    background-color: rgb(143, 145, 66);
 }
 
 nav ul{
@@ -44,6 +56,39 @@ nav li:hover a{
 }
 nav li:hover{
     background-color: rgb(67, 79, 42);
+}
+aside ul>li{
+    list-style-type: none;
+    margin-top: 10px;
+    border-bottom: 1px solid rgb(39, 48, 25);
+}
+aside li a{
+    color: rgb(30, 34, 20);
+    text-decoration: none;
+}
+aside li:hover a{
+    color: rgb(172, 197, 116);
+    background-color: rgb(67, 79, 42);
+}
+aside li:hover{
+    background-color: rgb(67, 79, 42);
+}
+.felgomb {
+    text-align: center;
+}
+.felgomb a{
+    text-decoration: none;
+    color: rgb(208, 252, 157);
+    text-decoration: underline;
+}
+.kovetkezo{
+    text-align: right;
+}
+.kovetkezo a{
+    text-decoration: underline;
+    color: rgb(208, 252, 157);
+    font-size: smaller;
+    padding: 10px;
 }
 
 .container{
@@ -75,7 +120,7 @@ img{
     max-width: 320px;
     max-height: 214px;
     float: left;
-    
+    margin: 10px;
 }
 
 div#kep1{
@@ -148,4 +193,55 @@ div#kep15{
 
 div#kep16{
     padding-top: 66px;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "as ar ar"
+    "f f f";
+    gap: 10px;
+}
+header{
+    grid-area: h;
+}
+nav{
+    grid-area: n;
+}
+aside{
+    grid-area: as;
+}
+article{
+    grid-area: ar;
+}
+
+footer{
+    grid-area: f;
+}
+
+@media screen and (max-width:700px) {
+    main { 
+        display: grid;  
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "h h"
+        "n n"
+        "as ar"
+        "f f";
+    } 
+}
+
+@media screen and (max-width:400px) {
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "as"
+        "ar"
+        "f";
+      }
 }

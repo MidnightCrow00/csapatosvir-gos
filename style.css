@@ -2,10 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: calc( 4px + 1vw )
+    font-size: calc( 4px + 1vw ) 
 }
 body{
-
     background-color: rgb(17, 26, 12);
     width: 90%;
     max-width: 1000px;
@@ -23,7 +22,13 @@ header{
 header>h1{
     font-size: xx-large;
 }
-
+article{
+    display: grid;
+    height: 100%;
+    gap: 10px;
+    border-radius: 1%;
+    background-color: rgb(143, 145, 66);
+}
 nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -59,14 +64,12 @@ h2{
     text-align: center;
     padding: 15px;
     padding-bottom: 30px;
-    color: rgb(186, 219, 159);
     font-size: 150%;
 }
 
 table{
     text-align: center;
-    color: rgb(186, 219, 159);
-    border: 1px solid rgb(186, 219, 159);
+    border: 1px solid rgb(17, 26, 12);
 }
 
 footer{
@@ -84,14 +87,22 @@ td{
     padding: 5px;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "ar ar ar"
+    "f f f";
+    gap: 10px;
+}
 header{
     grid-area: h;
 }
-
 nav{
     grid-area: n;
 }
-
 article{
     grid-area: ar;
 }
@@ -100,14 +111,27 @@ footer{
     grid-area: f;
 }
 
+@media screen and (max-width:700px) {
+    main { 
+        display: grid;  
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: 
+        "h h"
+        "n n"
+        "ar ar"
+        "f f";
+    } 
+}
+
 @media screen and (max-width:400px) {
-    main {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-areas: 
-      "h"
-      "n"
-      "ar"
-      "f";
-    }
+      main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "h"
+        "n"
+        "as"
+        "ar"
+        "f";
+      }
 }

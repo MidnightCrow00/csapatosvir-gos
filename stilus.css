@@ -2,11 +2,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: calc( 4px + 1vw )
-    
+    font-size: calc( 4px + 1vw )  
 }
 body{
-
     background-color: rgb(17, 26, 12);
     width: 90%;
     max-width: 1000px;
@@ -82,29 +80,31 @@ article{
     width: 30%;
     border: 1px solid rgba(186, 219, 159);
     border-radius: 1%;
-    margin: 2px;
+    margin: 10px;
     height: 70%;
 }
 .topkepek>img{
     width: 30%;
     border: 1px solid rgba(186, 219, 159);
     border-radius: 1%;
-    margin: 2px;
+    margin: 10px;
     max-height: 300px;
 }
 .viragnyelvkep>img{
     width: 30%;
     border: 1px solid rgba(186, 219, 159);
     border-radius: 1%;
-    margin: 2px;
+    margin: 10px;
     max-height: 250px;
 }
 .kep>img{
     width: 40%;
     border-radius: 1%;
-    margin: 2px;
+    margin: 10px;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .doboz{
     border: 1px solid rgba(0, 0, 0, 0.664);
@@ -116,16 +116,7 @@ article{
     text-decoration: underline;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-areas: 
-    "h h h"
-    "n n n"
-    "as ar ar"
-    "f f f";
-    gap: 10px;
-}
+
 footer>p {
     text-align: center;
     color: rgb(186, 219, 159);
@@ -138,6 +129,21 @@ footer>p {
     text-decoration: none;
     color: rgb(208, 252, 157);
     text-decoration: underline;
+}
+.kepszoveg {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.kepszoveg p{
+    font-size: small;
+    text-align: center;
+}
+.viragkep>img{
+    width: 30%;
+    border: 1px solid rgba(186, 219, 159);
+    border-radius: 1%;
+    margin: 10px;
+    max-height: 250px;
 }
 .kovetkezo{
     text-align: right;
@@ -155,6 +161,16 @@ footer>p {
 }
 #topharom{
     font-size: x-large;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-areas: 
+    "h h h"
+    "n n n"
+    "as ar ar"
+    "f f f";
+    gap: 10px;
 }
 header{
     grid-area: h;
