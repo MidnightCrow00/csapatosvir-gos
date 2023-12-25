@@ -70,6 +70,7 @@ h2{
 table{
     text-align: center;
     border: 1px solid rgb(17, 26, 12);
+    border-collapse: collapse;
 }
 
 footer{
